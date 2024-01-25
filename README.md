@@ -24,5 +24,5 @@ This project is help to build an intresting connection between a Mentor and Ment
 
 ## Support
 
-For support, email itsmejabastin@gmail.com or join our Slack channel.
+For support, email itsmejabastin@gmail.com.
 
