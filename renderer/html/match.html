@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Mentor Match</title>
+    <link rel="stylesheet" href="../css/staffsDetails.css">
+    <link rel="stylesheet" href="../css/match.css">
+  </head>
+  <body>
+
+    <div class="container-match">
+      <h1>Final Review</h1>
+      <form id="match-form" action="./pdf.html">
+      </form>
+      <div class="btn-container">
+        <button id="btn-match-back" class="btn" type="submit" >Back</button>
+        <button class="btn" id="btn-match-save">Save</button>
+        <button form="match-form" id="btn-match" class="btn" type="submit" disabled>Next</button>
+      </div>
+    </div>
+    
+    <script src="../js/match.js"></script>
+  </body>
+</html>

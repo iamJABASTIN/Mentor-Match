@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Mentor Match</title>
+    <link rel="stylesheet" href="../css/pdf.css">
+  </head>
+  <body>
+    <div class="pdf-container">
+        <table margin="5px" id="table">
+            <tr>
+                <th id="dep" colspan="2"></th>
+            </tr>
+            <tr>
+                <th id="sub"></th>
+                <th id="cls"></th>
+            </tr>
+            <tr>
+                <td align="center">-- NAME --</td>
+                <td align="center">-- ROLL NO --</td>
+            </tr>
+        </table>
+        <div class="btn-container">
+            <button id="btn-pdf-back" class="btn" type="submit" >Back</button>
+            <button form="match-form" id="btn-pdf" class="btn" type="submit">Download</button>
+          </div>
+    </div>
+    <script src="../js/pdf.js"></script>
+  </body>
+</html>

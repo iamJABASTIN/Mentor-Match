@@ -1,0 +1,134 @@
+:root {
+    --primary-dark    : #ffffff;
+    --secondary-dark  : #1098f7;
+    --background-dark : #272727;
+}
+
+*,*::after,*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font: caption;
+    box-sizing: border-box;
+    background-color: var(--background-dark);
+    color : var(--primary-dark);
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:max-content;
+    overflow:initial;
+}
+
+.container-staffs {
+  width: 750px;
+}
+
+.container-staffs h1{
+  text-align: center;
+  margin:40px 0;
+}
+
+#staffs-form {
+  display:flex;
+  flex-wrap: wrap;
+  gap:7%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn{
+  cursor: pointer;
+  width:30%;
+  padding:15px;
+  border-radius:5px;
+  border:0;
+  font-style: inherit;
+  font-weight: bold;
+  background-color:var(--secondary-dark);
+  font-size:16px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.btn:disabled{
+  opacity: 0.5;
+  cursor:not-allowed;
+}
+
+
+.btn:active, .btn:focus{
+  outline:none;
+  border: 2px solid var(--primary-dark);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.form-control{
+  margin:20px 0 40px;
+  position:relative;
+  width:300px;
+}
+
+.form-control input{
+  background-color: transparent;
+  width:100%;
+  border:0;
+  text-align:justify;
+  border-bottom:2px solid white;
+  display:block;
+  font-size: 18px;
+  padding:15px 0;
+  color:white;
+}
+
+.form-control label{
+  position:absolute;
+  top:15px;
+}
+
+.form-control label{
+  display:inline-block;
+  min-width: 5px;
+  font-size:18px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus ,
+.form-control input:valid {
+  outline:none;
+  border-bottom-color: var(--secondary-dark);
+}
+
+.form-control input:focus + label,
+.form-control input:valid + label{
+  color:var(--secondary-dark);
+  transform:translateY(-35px);
+}
+
+.form-control:hover{
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+.btn-container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+p {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+
+
+

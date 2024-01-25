@@ -1,0 +1,124 @@
+:root {
+    --primary-dark    : #ffffff;
+    --secondary-dark  : #1098f7;
+    --background-dark : #272727;
+}
+
+*,*::after,*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    padding: 50px;
+    font:caption;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100vh;
+}
+
+th {
+    background-color: lightgray;
+    width:45%;
+    height: 20px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+td{
+    background-color: #f5f5f5;
+    width:45%;
+    height: 20px;
+    padding: 10px;
+    font-size: 14;
+    text-transform: capitalize;
+}
+
+tr {
+    transition: all 0.3s ease-out;
+}
+
+tr:hover {
+    transform: scale(1.2);
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+    color: var(--secondary-dark);
+}
+
+.btn{
+    cursor: pointer;
+    width:30%;
+    padding:15px;
+    border-radius:5px;
+    border:0;
+    font-style: inherit;
+    font-weight: bold;
+    background-color:var(--secondary-dark);
+    font-size:16px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  
+  .btn:active, .btn:focus{
+    outline: none;
+    border: 2px solid var(--primary-dark);
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+  }
+
+  .btn-container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+   @media print {
+    .btn-container {
+      display: none; /* Hide buttons when printing */
+    }
+  
+    table {
+      width: 620px;
+      border: 2px solid black;
+      border-collapse: collapse; /* Combine borders of adjacent cells */
+    }
+  
+    th {
+      width: 620px;
+      background-color: #f5f5f5; /* More subtle header color */
+      padding: 0.5em;
+      border: 2px solid black;
+      font-weight: bold;
+    }
+  
+    td {
+      width: 620px;
+      padding: 0.5em;
+      border: 2px solid black;
+    }
+  
+    tr:nth-child(odd) {
+      background-color: #e5e5e5; /* Alternate row color */
+    }
+  
+    /* Define specific widths for columns if needed */
+    th.first-column {
+      width: 20%;
+    }
+  
+    td.second-column {
+      width: 30%;
+    }
+  }
+  
