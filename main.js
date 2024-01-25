@@ -39,7 +39,7 @@ const createWindow = () => {
     //To lode the first page of the application.
     mainWindow.loadFile('./renderer/html/index.html')
 
-    mainWindow.webContents.openDevTools() 
+    // mainWindow.webContents.openDevTools() -- Dev tool
 
     var WC = mainWindow.webContents
 

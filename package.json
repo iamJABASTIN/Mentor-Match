@@ -1,5 +1,5 @@
 {
-  "name": "my-electron-app",
+  "name": "Mentor Match",
   "version": "1.0.0",
   "description": "App for final sem students to assign project mentors",
   "main": "main.js",
