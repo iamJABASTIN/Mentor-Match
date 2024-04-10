@@ -19,7 +19,7 @@ This project is help to build an intresting connection between a Mentor and Ment
 
 ## Author
 
-- [@iamJABASTIN](https://www.github.com/octokatherine)
+- [@iamJABASTIN](https://www.github.com/iamJABASTIN)
 
 
 ## Support
